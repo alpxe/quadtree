@@ -72,12 +72,5 @@ module MultiUtil {
 				// App.StageUtils.getStage().scaleMode = egret.StageScaleMode.FIXED_HEIGHT;
 				break;
 		}
-	}
-
-	/**
-	 * 刷新页面
-	 */
-	export function rushView(): void {
-		location.href=NativeApi.getCurUrl();
-	}
+	}	
 }
