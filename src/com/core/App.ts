@@ -16,11 +16,4 @@ class App {
     public static get StageUtils():StageUtils{
         return StageUtils.getInstance();
     }
-
-    /**
-     * facade
-     */
-    public static get facade():ApplicationFacade{
-        return ApplicationFacade.getInstance(ApplicationFacade.NAME);
-    }
 }

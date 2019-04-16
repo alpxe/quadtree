@@ -39,14 +39,6 @@ class LoadingUI extends eui.UILayer {
     private createView(): void {
         this.label=new eui.Label();
         this.addChild(this.label);
-        
-        this.label.textAlign="center";
-
-        
-        
-        LayoutUtil.clean(this.label);
-        LayoutUtil.flow(this.label, FlowType.Middle, 0);
-        LayoutUtil.flow(this.label, FlowType.Center, 0);
     }
 
     public onProgress(current: number, total: number): void {

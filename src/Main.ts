@@ -87,9 +87,7 @@ class Main extends BaseComponent {
     private glow: egret.GlowFilter;
     public onResourceLoadComplete() {
         this.removeChild(this.loadingUI);
-
-        // this.initScene();
-        this.initMVC();
+        
         this.cont = new eui.Group();
         this.addChild(this.cont);
 
@@ -201,11 +199,7 @@ class Main extends BaseComponent {
             this.update(t);
         }
     }
-
-    public initMVC(): void {
-        ApplicationFacade.getInstance(ApplicationFacade.NAME).startup(this);
-        ApplicationFacade.getInstance(ApplicationFacade.NAME).sendNotification(ApplicationFacade.INSTALL_MAIN_EVENT);
-    }
+    
 
     public onResourceLoadProgress(itemsLoaded: number, itemsTotal: number) {
         console.log(itemsLoaded + "/" + itemsTotal);
