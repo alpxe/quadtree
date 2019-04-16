@@ -1,0 +1,36 @@
+module FlagKey{
+	export var CreateRoomReq = 0x40000001; // 创建房间请求
+    export var RoomEvent = 0x40000002; // 房间事件
+    export var StringData = 0x00000001; // 获取字符串类型数据
+    export var NumberData = 0x00000002; // 获取数字类型数据
+    // export var LoginReq = 0x40000003; // 登录请求
+    export var LoginReq = 0x41000003; // 登录请求   新版本
+    export var GameReq = 0x40000004; // 游戏请求
+    export var PlayerInfo = 0x40000005; // 获取玩家具体信息
+    export var LoginInfo = 0x40000006; // 获取玩家登录信息
+    export var DiamondInfo = 0x40000007; // 获取玩家钻石信息
+    export var UpdatePhone = 0x40000008; // 更新玩家手机号码
+    export var UpdateIDCard = 0x40000009; // 更新玩家身份证及姓名
+    export var UpdateAgent = 0x4000000D; // 更新玩家推广人
+    export var GetGameList = 0x4000000A; // 获取关联的游戏列表
+    export var DiamondEvent = 0x4000000B; // 钻石变动事件
+    export var LoginEvent = 0x4000000C; // 重复登录事件
+    export var ReplayList = 0x4000000E; // 加载录像摘要列表
+    export var ReplayInfo = 0x4000000F; // 加载录像
+    export var eServiceName = 0x40000010; //获取服务器列表
+    export var ePrepareUpdatePhone = 0x40000020;//向手机发送验证码
+    export var eGetDiamondConfig = 0x40000030; //获取钻石相关的配置
+    export var eGetLoginBonus = 0x40000040; //查询签到信息
+    export var TakeLoginBonus = 0x40000050; //领取签到奖励
+    export var GetFirstGift = 0x40000060;   //领取首充的奖励
+    export var HeartBeat = 0x40000070;    //心跳包
+    export var SealNumber = 0x30000080;    //封号提示
+    export var GetMailList = 0x40000080;             // 获取邮件列表
+    export var DeleteMail = 0x40000081;              // 删除邮件
+    export var OpenMail = 0x40000082;                // 阅读邮件
+    export var GetMailItem = 0x40000083;             // 获得邮件附件
+    export var IOSReviewPay = 0x40000084;            // 苹果提审内购添加物品
+    export var GetWheelGoods = 0x40000086;           //转盘抽奖
+    export var GetDetailInfo = 0x40000087;           //获取玩家日常信息
+    export var GetGameHistory = 0x40000090;          // 获得游戏历史
+}

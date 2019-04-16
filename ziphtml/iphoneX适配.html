@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <style>
+        body {
+            margin:0px;
+        }
+
+        conter {
+            width: 100%;
+            bottom: 0px;
+            top: 0px;
+            background-color: #e6effb;
+            position: absolute;
+        }
+
+        @media only screen and (device-width: 375px) and (device-height: 812px) {
+            conter {
+               bottom: 34px;
+            }
+        }
+
+
+        .init {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: absolute;
+            bottom: 0px;
+        }
+    </style>
+    <title>Title</title>
+
+    <script type="text/javascript">
+        function show() {
+            var s = "";
+            s += "网页可见区域宽度：" + document.body.clientWidth;
+            s += "\n网页可见区域高度：" + document.body.clientHeight;
+            s += "\n屏幕可用工作区域宽度：" + window.screen.availWidth;
+            s += "\n屏幕可用工作区域高度：" + window.screen.availHeight;
+            s += "\n屏幕分辨率宽度：" + window.screen.width;
+            s += "\n屏幕分辨率高度：" + window.screen.height;
+            alert(s);
+        }
+
+        window.onload=function (){
+            console.log("helloworld")
+            var o = document.getElementById("inner");
+
+            var h = o.offsetHeight; //高度
+
+            console.log(h)
+        }
+    </script>
+</head>
+<body>
+    <div id="inner" class="conter">
+        <div class="init"></div>
+    </div>
+</body>
+</html>
