@@ -134,7 +134,7 @@ class Main extends BaseComponent {
         this.tree.insert(node);
         this.total += 1;
     }
-
+    
     private qs: Array<TestComponent> = [];
     public __moveHandler(e: egret.TouchEvent): void {
         let rect: egret.Rectangle = new egret.Rectangle(e.stageX - 40, e.stageY - 40, 80, 80);
